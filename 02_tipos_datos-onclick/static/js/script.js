@@ -1,17 +1,18 @@
 // Declaración de variables
-let numeroEntero = 25;
-let numeroDecimal = 3.14;
-let cadenaTexto = "Hola, mundo";
-let valorBooleano = true;
-let arregloNumeros = [1, 2, 3, 4];
-let objetoPersona = { nombre: "Ana", edad: 30 };
-let valorIndefinido;
-let valorNulo = null;
-const mes = "Junio";
+let numeroEntero = 2008;    // tipo numerico INT 
+//En programación,( = )significa "asignar" o "igualar"
+let numeroDecimal = 1.5;// numero con parte decimal FLOAT
+let cadenaTexto = "Hola, tete"; // string
+let valorBooleano = true; // booleano es el valor de verdadero o falso (0,1) BOOLEAN
+let arreglo = [1, 2, 3, 4];// arreglo ( puede contener textos o numeros ) ARRAY
+let objetoPersona = { nombre: "Ana", edad: 30 }; //objeto como un diccionario  - OBJECT
+let valorIndefinido; // sin valor o tipo asignado - UNDIFINED 
+let valorNulo = null;// valor nulo - NULL
+const mes = "Junio";// constante - NO VARIA 
 
 // Funciones para mostrar cada valor con alert()
-function mostrarNumeroEntero() {
-    alert("Número entero: " + numeroEntero);
+function mostrarNumeroEntero() { // function es un bloque de codigo que hace una tarea especifica 
+    alert("Número entero: " + numeroEntero); // el alert es como un cuadro emergente 
 }
 
 function mostrarNumeroDecimal() {
@@ -45,3 +46,6 @@ function mostrarNulo() {
 function mostrarConstante() {
     alert("Constante mes: " + mes);
 }
+
+
+// lo que hacen las variables es alamcenar informacion
