@@ -22,6 +22,9 @@ let apellido = prompt("Ingrese su apellido");
 
     );
 // No se puede realizar porque es inmutable
-
+apellido[1] = "j"; // No funciona 
+alert("Segunda letra del apellido es:" + segundaLetraApellido + "\nPenultima letra del apellido es:" PenultimaLetraApellido
+    
+);
 
 }
