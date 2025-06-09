@@ -21,7 +21,7 @@ let apellido = prompt("Ingrese su apellido");
     alert("segunda letras es:" + segundaLetra + "\npenultima letra es:" + penultimaLetra
 
     );
-
+// No se puede realizar porque es inmutable
 
 
 }
