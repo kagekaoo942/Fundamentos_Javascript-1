@@ -84,22 +84,44 @@ function note() {
 }
 //  Pide un nombre de usuario. Si el valor ingresado es "admin", muestra “Bienvenido, administrador”.
 //  Si no, muestra “Usuario no reconocido”.
-function usuarioAdmin(){
+function usuarioAdmin() {
     let usuari = prompt("Ingresar usuario");
-    if(usuari == "admin"){
+    if (usuari == "admin") {
         alert("Bienvenido, administrador");
-    }else{
+    } else {
         alert("usuario no reconocido");
     }
 }
 // Verificar si una palabra empieza con "A"
 //  Pide una palabra al usuario. Verifica si empieza con la letra “A” mayúscula y muestra un mensaje acorde.
-function palabraMayuscula(){
-    let letra = prompt("Ingresar palabra")
+function palabraMayuscula() {
+    let letra = prompt("Ingresar palabra");
     let letraA = "A";
-    if(letra[0] == letraA){
-        alert("la palabra si empieza con A")
-    }else{
-        alert("no empieza por A")
+    if (letra[0] == letraA) {
+        alert("la palabra si empieza con A");
+    } else {
+        alert("no empieza por A");
     }
+}
+//  Solicita el precio de un producto. Si el precio es mayor a 10000, muestra que aplica descuento. Si no, indica precio normal.
+
+function precioDescuento() {
+    let precio = prompt("Ingresar precio");
+    if (precio >= 10000) {
+        alert(" Descuento");
+    } else {
+        alert(" precio normal");
+    }
+}
+
+// Verificar si una persona puede conducir
+//  Solicita la edad del usuario y si tiene licencia (por ejemplo, respondiendo "sí" o "no"). Si tiene 18 o más y respondió que tiene licencia, muestra “Puede conducir”. Si no, muestra “No puede conducir”.
+function ingresarUsuario() {
+    let edad = parseInt(prompt(ingresar edad))
+
+    if ()
+
+
+
+
 }
