@@ -117,11 +117,12 @@ function precioDescuento() {
 // Verificar si una persona puede conducir
 //  Solicita la edad del usuario y si tiene licencia (por ejemplo, respondiendo "sí" o "no"). Si tiene 18 o más y respondió que tiene licencia, muestra “Puede conducir”. Si no, muestra “No puede conducir”.
 function ingresarUsuario() {
-    let edad = parseInt(prompt(ingresar edad))
-
-    if ()
-
-
-
-
+    let = edad = parseInt(prompt("¿Cual es tu edad?"));
+    let = tieneLicencia = prompt("¿Tienes licencia de conducir?");
+    if (edad >= 18 && tieneLicencia == "si") {
+        alert("puede conducir");
+    } else {
+        alert("No puede conducir");
+    }
 }
+
