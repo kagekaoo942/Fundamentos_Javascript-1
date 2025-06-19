@@ -107,10 +107,10 @@ function palabraMayuscula() {
 
 function precioDescuento() {
     let precio = prompt("Ingresar precio");
-    if (precio >= 10000) {
-        alert(" Descuento");
+    if (precio > 10000) {
+        alert("Descuento");
     } else {
-        alert(" precio normal");
+        alert("precio normal");
     }
 }
 
