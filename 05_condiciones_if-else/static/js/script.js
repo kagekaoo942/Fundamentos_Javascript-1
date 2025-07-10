@@ -71,7 +71,6 @@ function compararNumeros() {
 }
 // Calificación escolar
 //  Pide una nota entre 1 y 7. Si es 4 o más, muestra “Aprobado”, si es menor, muestra “Reprobado”.
-
 function note() {
     let ingresa = parseInt(prompt("ingresar nota"));
     if (ingresa < 4) {
