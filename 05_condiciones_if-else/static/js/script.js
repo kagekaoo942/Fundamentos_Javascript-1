@@ -82,6 +82,7 @@ function note() {
         alert("ingrese valor valido");
     }
 }
+
 //  Pide un nombre de usuario. Si el valor ingresado es "admin", muestra “Bienvenido, administrador”.
 //  Si no, muestra “Usuario no reconocido”.
 function usuarioAdmin() {
@@ -92,6 +93,7 @@ function usuarioAdmin() {
         alert("usuario no reconocido");
     }
 }
+
 // Verificar si una palabra empieza con "A"
 //  Pide una palabra al usuario. Verifica si empieza con la letra “A” mayúscula y muestra un mensaje acorde.
 function palabraMayuscula() {
@@ -103,12 +105,16 @@ function palabraMayuscula() {
         alert("no empieza por A");
     }
 }
-//  Solicita el precio de un producto. Si el precio es mayor a 10000, muestra que aplica descuento. Si no, indica precio normal.
 
+//  Solicita el precio de un producto. Si el precio es mayor a 10000, muestra que aplica descuento. Si no, indica precio normal.
 function precioDescuento() {
-    let precio = prompt("Ingresar precio");
+    //añadir un porcentaje de descuento e IVA y mostrar
+    let iva = 0.19;
+    let descuento = parseFloat(prompt("ingrese el valor de descuento: Ejemplo 20"));
+    descuento /= 100; // operacion para llevarlo a decimal
+    let precio = parseFloat(prompt("Ingresar precio del producto"));
     if (precio > 10000) {
-        alert("Descuento");
+        alert("descuento");
     } else {
         alert("precio normal");
     }
