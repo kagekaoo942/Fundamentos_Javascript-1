@@ -106,17 +106,20 @@ function palabraMayuscula() {
 }
 
 //  Solicita el precio de un producto. Si el precio es mayor a 10000, muestra que aplica descuento. Si no, indica precio normal.
-function precioDescuento() {
-    //añadir un porcentaje de descuento e IVA y mostrar
-    let iva = 0.19;
-    let descuento = parseFloat(prompt("ingrese el valor de descuento: Ejemplo 20"));
-    descuento /= 100; // operacion para llevarlo a decimal
-    let precio = parseFloat(prompt("Ingresar precio del producto"));
-    if (precio > 10000) {
-        alert("descuento");
-    } else {
-        alert("precio normal");
-    }
+function ingresarPrecio(){ // Creación de la función
+  //Añadir un porcentaje de descuento e IVA y mostrar.
+  let iva = 0.19;
+  let descuento = parseFloat(prompt("Ingrese el valor de descuento: Ejemplo 20"));
+  descuento /= 100; // operación para llevar a decimal
+  let precio = parseFloat(prompt("Ingrese el precio del producto"));
+  if (precio > 10000){
+    alert(`El valor ingresado fue: ${precio}\n
+          IVA: ${precio * iva}\n
+          Precio Total:${precio * 1.19}\n
+          `);
+  } else {
+    alert("Precio normal");
+  }
 }
 
 // Verificar si una persona puede conducir
@@ -130,4 +133,31 @@ function ingresarUsuario() {
         alert("No puede conducir");
     }
 }
+// segunda parte
 
+//Comparar la longitud de dos palabras
+//Solicita dos palabras con prompt(). Compara cuántas letras tiene cada una y muestra cuál es más larga o si tienen el mismo largo.
+function ingresarPalabra() {
+    let = palabraUno = prompt("ingresar primera palabra");
+    let = palabraDos = prompt("ingresar segunda palabra");
+    const lengthUno = palabraUno.length;
+    const lengthDos = palabraDos.length;
+if (lengthUno > lengthDos){
+    alert("la primera palabra es la mas larga")
+} else if (lengthUno == lengthDos){
+   alert("ambas palabras miden lo mismo")
+}else
+alert("la segundo palabra es la mas larga")
+}
+
+//Validar correo electrónico
+//Pide al usuario que ingrese un correo. Verifica si el texto contiene el símbolo @. Si lo tiene, muestra "Correo válido", si no, "Correo inválido".
+function ingresarCorreo(){
+let = correoElectronico = prompt("ingresar correo electronico");
+if(ingresarCorreo.includes()){
+alert("correo valido")
+} else {
+    alert("correo invalido")
+}
+
+}
