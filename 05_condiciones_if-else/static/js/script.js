@@ -128,14 +128,16 @@ function licenciaEdad() {
     let = edad = parseInt(prompt("¿Cual es tu edad?"));
     if (edad > 100) {
         alert("Su edad es incompatible")
-    }
-    else if (edad >= 18 && licencia == "si") {
-        alert("puede conducir");
-        let = licencia = prompt("Ingresar si tiene licencia si/no");
-        if (licencia == "si") {
-            alert("Usted puede conducir");
-        } else if (licencia == "no") {
-            alert("No puede conducir");
+        if (edad >= 18 && licencia == "si") {
+            alert("puede conducir");
+            let = licencia = prompt("Ingresar si tiene licencia si/no");
+            if (licencia == "si") {
+                alert("Usted puede conducir");
+            } else if (licencia == "no") {
+                alert("No puede conducir");
+            }
+        } else {
+            alert("Ingresar valores válidos")
         }
     } else {
         alert("Ingresar valores válidos")
@@ -146,19 +148,22 @@ function licenciaEdad() {
 
 //Comparar la longitud de dos palabras
 //Solicita dos palabras con prompt(). Compara cuántas letras tiene cada una y muestra cuál es más larga o si tienen el mismo largo.
-function ingresarPalabra() {
-    let = palabraUno = prompt("ingresar primera palabra");
-    let = palabraDos = prompt("ingresar segunda palabra");
-    const lengthUno = palabraUno.length;
-    const lengthDos = palabraDos.length;
-    if (lengthUno > lengthDos) {
-        alert("la primera palabra es la mas larga")
-    } else if (lengthUno == lengthDos) {
-        alert("ambas palabras miden lo mismo")
-    } else
-        alert("la segundo palabra es la mas larga")
-}
+function encontrarPalabraLarga() {
+    let = pal1 = prompt("ingrese primera palabra");
+    let = pal2 = prompt("ingrese segunda palabra");
 
+    if (pal1 == "" && pal2 == "") {
+        alert("ingrese algun otro valor para trabajar")
+    }
+    if (pal1.length < pal2.length) {
+        alert(`La palbra mas larga es ${pal2} con ${pal2.length} caracteres`)
+    } else if (pal1.length == pal2.length) {
+        alert(`Las palbras mas ${pal2} y ${pal1} tienen el mismo largo con:\n ${pal1.length} caracteres`)
+    } else {
+        alert(`La palbra mas larga es ${pal1} con ${pal1.length} caracteres`)
+    }
+
+}
 //Validar correo electrónico
 //Pide al usuario que ingrese un correo. Verifica si el texto contiene el símbolo @. Si lo tiene, muestra "Correo válido", si no, "Correo inválido".
 function ingresarCorreo() {
@@ -179,5 +184,16 @@ function ingresarNumero() {
         alert("numero negativo");
     }
 }
- //Saludo personalizado según hora
+//Saludo personalizado según hora
 //Pide la hora actual (en formato 24 horas). Si es antes de las 12, muestra "Buenos días", si es entre 12 y 18, "Buenas tardes", y si es mayor a 18, "Buenas noches".
+function ingresarHora() {
+    let = horaActual = parseInt(prompt("Ingresar hora actual"))
+    if (horaActual < 12) {
+        alert("Buenos dias")
+    } else if (horaActual >= 12 && horaActual <= 18) {
+        alert("Buenas tardes")
+    } else {
+        alert("Buenas noches");
+    }
+
+}
