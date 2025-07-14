@@ -106,33 +106,42 @@ function palabraMayuscula() {
 }
 
 //  Solicita el precio de un producto. Si el precio es mayor a 10000, muestra que aplica descuento. Si no, indica precio normal.
-function ingresarPrecio(){ // Creación de la función
-  //Añadir un porcentaje de descuento e IVA y mostrar.
-  let iva = 0.19;
-  let descuento = parseFloat(prompt("Ingrese el valor de descuento: Ejemplo 20"));
-  descuento /= 100; // operación para llevar a decimal
-  let precio = parseFloat(prompt("Ingrese el precio del producto"));
-  if (precio > 10000){
-    alert(`El valor ingresado fue: ${precio}\n
+function ingresarPrecio() { // Creación de la función
+    //Añadir un porcentaje de descuento e IVA y mostrar.
+    let iva = 0.19;
+    let descuento = parseFloat(prompt("Ingrese el valor de descuento: Ejemplo 20"));
+    descuento /= 100; // operación para llevar a decimal
+    let precio = parseFloat(prompt("Ingrese el precio del producto"));
+    if (precio > 10000) {
+        alert(`El valor ingresado fue: ${precio}\n
           IVA: ${precio * iva}\n
           Precio Total:${precio * 1.19}\n
           `);
-  } else {
-    alert("Precio normal");
-  }
+    } else {
+        alert("Precio normal");
+    }
 }
 
 // Verificar si una persona puede conducir
 //  Solicita la edad del usuario y si tiene licencia (por ejemplo, respondiendo "sí" o "no"). Si tiene 18 o más y respondió que tiene licencia, muestra “Puede conducir”. Si no, muestra “No puede conducir”.
-function ingresarUsuario() {
+function licenciaEdad() {
     let = edad = parseInt(prompt("¿Cual es tu edad?"));
-    let = tieneLicencia = prompt("¿Tienes licencia de conducir?");
-    if (edad >= 18 && tieneLicencia == "si") {
+    if (edad > 100) {
+        alert("Su edad es incompatible")
+    }
+    else if (edad >= 18 && licencia == "si") {
         alert("puede conducir");
+        let = licencia = prompt("Ingresar si tiene licencia si/no");
+        if (licencia == "si") {
+            alert("Usted puede conducir");
+        } else if (licencia == "no") {
+            alert("No puede conducir");
+        }
     } else {
-        alert("No puede conducir");
+        alert("Ingresar valores válidos")
     }
 }
+
 // segunda parte
 
 //Comparar la longitud de dos palabras
@@ -142,22 +151,33 @@ function ingresarPalabra() {
     let = palabraDos = prompt("ingresar segunda palabra");
     const lengthUno = palabraUno.length;
     const lengthDos = palabraDos.length;
-if (lengthUno > lengthDos){
-    alert("la primera palabra es la mas larga")
-} else if (lengthUno == lengthDos){
-   alert("ambas palabras miden lo mismo")
-}else
-alert("la segundo palabra es la mas larga")
+    if (lengthUno > lengthDos) {
+        alert("la primera palabra es la mas larga")
+    } else if (lengthUno == lengthDos) {
+        alert("ambas palabras miden lo mismo")
+    } else
+        alert("la segundo palabra es la mas larga")
 }
 
 //Validar correo electrónico
 //Pide al usuario que ingrese un correo. Verifica si el texto contiene el símbolo @. Si lo tiene, muestra "Correo válido", si no, "Correo inválido".
-function ingresarCorreo(){
-let = correoElectronico = prompt("ingresar correo electronico");
-if(ingresarCorreo.includes()){
-alert("correo valido")
-} else {
-    alert("correo invalido")
+function ingresarCorreo() {
+    let = correoElectronico = prompt("ingresar correo electronico:");
+    if (correoElectronico.includes('@')) {
+        alert("correo valido")
+    } else {
+        alert("correo invalido")
+    }
 }
-
+//Verificar si un número es positivo o negativo
+//Solicita un número. Muestra si es positivo, negativo o cero.
+function ingresarNumero() {
+    let = numero = parseInt(prompt("ingresar numero"));
+    if (numero > 0) {
+        alert("numero positivo")
+    } else {
+        alert("numero negativo");
+    }
 }
+ //Saludo personalizado según hora
+//Pide la hora actual (en formato 24 horas). Si es antes de las 12, muestra "Buenos días", si es entre 12 y 18, "Buenas tardes", y si es mayor a 18, "Buenas noches".
