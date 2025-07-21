@@ -156,11 +156,11 @@ function encontrarPalabraLarga() {
         alert("ingrese algun otro valor para trabajar")
     }
     if (pal1.length < pal2.length) {
-        alert(`La palbra mas larga es ${pal2} con ${pal2.length} caracteres`)
+        alert(`La palabra mas larga es ${pal2} con ${pal2.length} caracteres`)
     } else if (pal1.length == pal2.length) {
-        alert(`Las palbras mas ${pal2} y ${pal1} tienen el mismo largo con:\n ${pal1.length} caracteres`)
+        alert(`Las palabras ${pal2} y ${pal1} tienen el mismo largo con:\n ${pal1.length} caracteres`)
     } else {
-        alert(`La palbra mas larga es ${pal1} con ${pal1.length} caracteres`)
+        alert(`La palabra mas larga es ${pal1} con ${pal1.length} caracteres`)
     }
 
 }
@@ -196,4 +196,14 @@ function ingresarHora() {
         alert("Buenas noches");
     }
 
+}
+//verificar si una palabra contiene la letra "e"
+//Solicita una palabra. Verifica si contiene la letra "e" (minúscula). Si la tiene, muestra "Contiene la letra 'e'", si no, muestra "No contiene la letra 'e'".
+function ingresarPalabra() {
+    let = letra = prompt("ingresar palabra");
+    if (letra.includes('e')) {
+        alert("incluye la letra e")
+    } else {
+        alert("no contiene la letra e");
+    }
 }
