@@ -202,7 +202,7 @@ function ingresarHora() {
 function ingresarPalabra() {
     let = letra = prompt("ingresar palabra");
     if (letra.includes('e')) {
-        alert("incluye la letra e")
+        alert("contiene la letra e")
     } else {
         alert("no contiene la letra e");
     }
