@@ -166,20 +166,22 @@ function encontrarPalabraLarga() {
 }
 //Validar correo electrónico
 //Pide al usuario que ingrese un correo. Verifica si el texto contiene el símbolo @. Si lo tiene, muestra "Correo válido", si no, "Correo inválido".
-function ingresarCorreo() {
-    let = correoElectronico = prompt("ingresar correo electronico:");
-    if (correoElectronico.includes('@')) {
-        alert("correo valido")
+function validarCorreo() {
+    let = email = prompt("Por favor, ingresar correo: ");
+    if (email.includes("@")) {
+        alert(`El correo ${email} es válido`);
     } else {
-        alert("correo invalido")
+        alert(`El correo ${email} es inválido`);
     }
 }
 //Verificar si un número es positivo o negativo
 //Solicita un número. Muestra si es positivo, negativo o cero.
 function ingresarNumero() {
-    let = numero = parseInt(prompt("ingresar numero"));
+    let = numero = parseInt(prompt("ingresar numero:"));
     if (numero > 0) {
         alert("numero positivo")
+    } else if (numero == 0) {
+        alert("cero")
     } else {
         alert("numero negativo");
     }
@@ -200,10 +202,10 @@ function ingresarHora() {
 //verificar si una palabra contiene la letra "e"
 //Solicita una palabra. Verifica si contiene la letra "e" (minúscula). Si la tiene, muestra "Contiene la letra 'e'", si no, muestra "No contiene la letra 'e'".
 function ingresarPalabra() {
-    let = letra = prompt("ingresar palabra");
-    if (letra.includes('e')) {
-        alert("contiene la letra e")
+    let = palabra = prompt("ingresar palabra");
+    if (palabra.includes("e")) {
+        alert(`la palabra ${palabra} contiene la letra e`)
     } else {
-        alert("no contiene la letra e");
+        alert(`la palabra ${palabra} no contiene la letra e`)
     }
 }
