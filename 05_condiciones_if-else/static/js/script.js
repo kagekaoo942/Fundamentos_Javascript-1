@@ -189,7 +189,7 @@ function ingresarNumero() {
 //Saludo personalizado según hora
 //Pide la hora actual (en formato 24 horas). Si es antes de las 12, muestra "Buenos días", si es entre 12 y 18, "Buenas tardes", y si es mayor a 18, "Buenas noches".
 function ingresarHora() {
-    let = horaActual = parseInt(prompt("Ingresar hora actual"))
+    let = horaActual = parseInt(prompt("Ingresar hora en formato 24hrs"))
     if (horaActual < 12) {
         alert(`buenos días son las ${horaActual} hrs!.`)
     } else if (horaActual >= 12 && horaActual <= 18) {
@@ -202,7 +202,7 @@ function ingresarHora() {
 //verificar si una palabra contiene la letra "e"
 //Solicita una palabra. Verifica si contiene la letra "e" (minúscula). Si la tiene, muestra "Contiene la letra 'e'", si no, muestra "No contiene la letra 'e'".
 function ingresarPalabra() {
-    let palabra = prompt("ingresar palabra en formato 24hrs");
+    let palabra = prompt("ingresar palabra ");
     if (palabra.includes("e")) {
         alert(`la palabra ${palabra} contiene la letra e minúscula`)
     } else {
