@@ -180,7 +180,7 @@ function ingresarNumero() {
     let = numero = parseInt(prompt("ingresar numero:"));
     if (numero > 0) {
         alert(`El numero ${numero} es positivo`)
-    } else if (numero == 0) {
+    } else if (numero === 0) {
         alert(`El numero ${numero} es cero`)
     } else {
         alert(`El numero ${numero} es negativo`);
@@ -191,21 +191,21 @@ function ingresarNumero() {
 function ingresarHora() {
     let = horaActual = parseInt(prompt("Ingresar hora actual"))
     if (horaActual < 12) {
-        alert("Buenos dias")
+        alert(`buenos días son las ${horaActual} hrs!.`)
     } else if (horaActual >= 12 && horaActual <= 18) {
-        alert("Buenas tardes")
+        alert(`buenas tardes son las ${horaActual} hrs!.`)
     } else {
-        alert("Buenas noches");
+        alert(`buenas noches son las ${horaActual} hrs!.`);
     }
 
 }
 //verificar si una palabra contiene la letra "e"
 //Solicita una palabra. Verifica si contiene la letra "e" (minúscula). Si la tiene, muestra "Contiene la letra 'e'", si no, muestra "No contiene la letra 'e'".
 function ingresarPalabra() {
-    let = palabra = prompt("ingresar palabra");
+    let palabra = prompt("ingresar palabra en formato 24hrs");
     if (palabra.includes("e")) {
-        alert(`la palabra ${palabra} contiene la letra e`)
+        alert(`la palabra ${palabra} contiene la letra e minúscula`)
     } else {
-        alert(`la palabra ${palabra} no contiene la letra e`)
+        alert(`la palabra ${palabra} no contiene la letra e minúscula`)
     }
 }
