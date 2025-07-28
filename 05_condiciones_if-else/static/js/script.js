@@ -179,11 +179,11 @@ function validarCorreo() {
 function ingresarNumero() {
     let = numero = parseInt(prompt("ingresar numero:"));
     if (numero > 0) {
-        alert("numero positivo")
+        alert(`El numero ${numero} es positivo`)
     } else if (numero == 0) {
-        alert("cero")
+        alert(`El numero ${numero} es cero`)
     } else {
-        alert("numero negativo");
+        alert(`El numero ${numero} es negativo`);
     }
 }
 //Saludo personalizado según hora
