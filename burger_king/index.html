@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- autor del documento -->
+    <meta name="author" content="martinacevedo@liceovvh.cl">
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- boostrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Burker king</title>
+</head>
+
+<body>
+    <!-- barra de navegacion 1 -->
+    <nav>
+        <div class="nav-bar">
+            <!-- icono -->
+            <div class="enlaces">
+                <div class="lista">
+                    <a href="#" class="icon-list"><i class="bi bi-list"></i></a>
+                    <a href="#" class="link-1"><strong>Pide aquí</strong></a>
+                    <a href="#" class="link-1"><strong>Restaurantes</strong></a>
+                    <a href="#" class="link-1"><strong>Mi BK</strong></a>
+                    <a href="#" class="link-1"><strong>Cupones</strong></a>
+                    <a href="#" class="link-1"><strong>Trabaja con nosotros</strong></a>
+                </div>
+                <a href="#"> <img src="static/images/logo.png" alt="Logo de burger king" class="logo"></a>
+            </div>
+            <div class="botones">
+                <button class="btn-1" onclick="cerrarSesion()" id="cambiarTexto"><strong>Inscribirse</strong></button>
+                <button class="btn-2" onclick="contador()" id="contador"><i
+                        class="bi bi-bag-fill"></i><strong>0$</strong></button>
+            </div>
+        </div>
+        <!-- barra de navegacion 2 -->
+        <div class="nav-bar-2">
+            <a href="#" class="idioma"><i class="bi bi-globe"></i>ES</a>
+        </div>
+    </nav>
+    <div class="caja-ancha">
+        <div>
+            <img src="static/images/logo-2.png" alt="logo 2" class="logo-2">
+            <p class="bienvenido"><strong>¡Bienvenido! puedes ganar coronas con cada compra y utilizarlas para canjear
+                    recompensas.</strong></p>
+        </div>
+        <button class="detalles" id="detalle"><img src="static/images/icono-interrogacion.svg"
+                alt="icono de icono interrogacion" class="icono-int">Detalles</button>
+
+    </div>
+    <!-- conrtenedor -->
+    <div class="container">
+        <div class="row">
+            <!-- fila 1 -->
+            <div class="fila">
+                <!-- caja 1 -->
+                <div class="caja">
+                    <img src="static/images/imagen-1.png" alt="imagen 1" class="img-caja" id="img-1">
+                    <div <div class="description">
+                        <h2><span>Pide en el local más cercano mi rey</span></h2>
+                        <p><span>Disfruta la mejor experiencia pidiendo por Mi BK activando tu geolocalización cada
+                                vez
+                                que
+                                haces
+                                un pedido. Así te aseguras de estar pidiendo en el local más cercano a
+                                ti.</span></p>
+                    </div>
+                    <div class="btn-caja">
+                        <button class="btn-blanco" id="btn-1" ondblclick="botonCaja()"><strong>Activar
+                                ahora</strong></button>
+                    </div>
+
+                </div>
+
+                <!-- caja 2 -->
+                <div class="caja">
+                    <img src="static/images/imagen-2.png" alt="imagen 2" class="img-caja">
+                    <!-- contenido -->
+                    <div>
+                        <div class="description">
+                            <h2><span>Nueva cheestaker, lo mejor de dos mundos</span></h2>
+                            <p><span>Finalmente los sueños se hicieron realidad. ¡¡Una hamburguesa con Cheese Pillows
+                                    adentro!!, y
+                                    no cualquier burger, la deliciosa STACKER. Para los amantes del queso, esto es el
+                                    paraíso.
+                                    Pruébala en nuestros locales y descúbrela en nuestra app.</span></p>
+                        </div>
+                        <div class="btn-caja">
+                            <button class="btn-blanco" onclick="botonCaja()"><strong>Pedilo en la App!</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fila 2 -->
+            <div class="fila">
+                <!-- caja 3 -->
+                <div class="caja">
+                    <img src="static/images/imagen-3.png" alt="imagen 3" class="img-caja">
+                    <!-- contenido -->
+                    <div>
+                        <div class="description">
+                            <h2><span>Suelta la manito de guagua</span></h2>
+                            <p><span>Todos conocemos a alguien apretado, ese amigo que acompaña a salir, pero solo se
+                                    pide
+                                    un
+                                    agua. O ese amigo que no aporta para el regalo compartido. Si no conoces a nadie
+                                    así,
+                                    probablemente seas tú. Descubre los nuevos combos King Ahorro en tu local más
+                                    cercano o
+                                    próximamente en la app. Relaja esas manitos de guagua.</span></p>
+                        </div>
+                        <div class="btn-caja">
+                            <button class="btn-blanco" onclick="botonCaja()"><strong>Ya lo probaste?</strong></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- caja 4 -->
+                <div class="caja">
+                    <img src="static/images/imagen-4.png" alt="imagen 4" class="img-caja">
+                    <!-- contenido -->
+                    <div>
+                        <div class="description">
+                            <h2><span>estás a una descarga del bajón de tus sueños</span></h2>
+                            <p><span>Baja la APP MI BK y encuentra promos y descuentos exclusivos para ti. Además, con
+                                    cada
+                                    compra acumulas coronitas para canjear por distintos productos.</span></p>
+                        </div>
+                        <div class="btn-caja" id="btn-4">
+                            <button class="btn-blanco" onclick="botonCaja()"><strong>descarga aquí</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- caja 5 -->
+            <div class="caja">
+
+                <img src="static/images/imagen-5.png" alt="imagen 5" class="img-caja">
+                <!-- contenido -->
+                <div>
+                    <div class="description">
+                        <h2><span>Solo para chesse lovers</span></h2>
+                        <p><span>Si eres un amante del queso, prepárate para una experiencia irresistiblemente
+                                deliciosa
+                                con
+                                nuestros nuevos Cheesy Pillows. Estas crujientes almohaditas apanadas están rellenas
+                                de
+                                queso gouda derretido, ¡una explosión de sabor que te dejará queriendo más y más! En
+                                Burger
+                                King, sabemos que el queso es la clave de la felicidad, ¡así que ven y disfruta de
+                                esta
+                                tentación queso-amorosa hoy mismo</span></p>
+                    </div>
+                    <div class="btn-caja">
+                        <button class="btn-blanco" onclick="botonCaja()"><strong>Ver más</strong></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+        <img src="static/images/img-telefono.png" alt="imagen de un telefono" class="phone"">
+            <!-- contenido -->
+             <div class=" dowload">
+        <h2 class="text-tiendas"><span><strong>Descagar nuestrab APP y descrubre las increíbles ofertas que tenemos
+                    para ti.cupones y ofertas!</strong></span></h2>
+
+        <!-- tiendas -->
+        <div class="tiendas">
+            <a href="#"> <img src="static/images/logo-apple.svg" alt="app store" class="app-store"></a>
+            <a href="#"><img src=" static/images/play-store.png" alt="play store" class="play-store"></a>
+        </div>
+        <p><span>Apple y el logotipo de Apple son marcas comerciales de Appke Insc., registradas en EE.
+                UU. y otros
+                países.
+                App store es una marca de servicios de Apple Inc. Google Play es una marca comercial de Google Inc. Se
+                aplican términos.</span>
+        </p>
+    </div>
+    </div>
+    <!-- pie de pagina -->
+    <footer>
+        <!-- enlaces -->
+        <div class="enlaces-2">
+            <a href="#" class="link-2">Preguntas Frecuentes</a>
+            <a href="#" class="link-2">Términos y condiciones</a>
+            <a href="#" class="link-2">Términos y condiciones</a>
+            <a href="#" class="link-2">Términos y condiciones</a>
+            <a href="#" class="link-2">Informacion Legal</a>
+            <a href="#" class="link-2">Politica de Privacidad</a>
+            <a href="#" class="link-2">Contáctanos</a>
+            <a href="#" class="link-2">Promociones-Bases y condiciones</a>
+        </div>
+        <div class="redes">
+            <div>
+                <h2 class="redes-sociales">Redes sociales</h2>
+                <!-- iconos -->
+                <div class="iconos">
+                    <a href="#" class="link-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="link-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="link-icon"> <i class="bi bi-youtube"></i></a>
+                    <a href="#" class=" link-icon"> <i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <p class="derechos">TM & 2024 Burger King Corporation.Todos los derechos reservados</p>
+            <a href="#" class="idioma-2"><i class="bi bi-globe"></i>ES</a>
+        </div>
+        <a href="#" class="cookie">Configuración de cookies</a>
+    </footer>
+
+
+
+    <!-- JS -->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
