@@ -18,9 +18,9 @@
     <nav>
         <div class="nav-bar-1">
             <!-- icono -->
-             <div>
-            <i class="bi bi-list"></i>
-            <!-- enlaces -->
+            <div class="enlaces">
+                <i class="bi bi-list"></i>
+                <!-- enlaces -->
                 <a href="#" class="navegacion">Pide aquí</a>
                 <a href="#" class="navegacion">Restaruante</a>
                 <a href="#" class="navegacion">Mi BK</a>
@@ -33,91 +33,131 @@
                 <button class="carrito"><i class="bi bi-bag-fill"></i> 0$</button>
             </div>
         </div>
+        </div>
         <div class="nav-bar-2">
             <!-- icono -->
-            <a href="#"> <i class="bi bi-globe"></i>ES</a>
+            <a href="#" class="globo"> <i class="bi bi-globe"></i>ES</a>
         </div>
-    </nav>
-    <div class="container">
         <!-- primera caja -->
         <div class="caja-ancha">
-            <img src="static/images/logo-2.png" alt="">
-            <p>¡Bienvenido! Puedes ganar coronas con cada compra y autilizarlas para canjear recompensas.</p>
-            <button><i class="bi bi-exclamation-circle-fill"></i> Detalles</button>
+            <div>
+                <img src="static/images/logo-2.png" alt="logo 2">
+                <p>¡Bienvenido! Puedes ganar coronas con cada compra y autilizarlas para canjear recompensas.</p>
+            </div>
+            <button class="detalles"><i class=" bi-exclamation-circle-fill"></i> Detalles</button>
         </div>
-        <div class="cajas">
-            <div class="caja">
-                <img src="static/images/localizacion.png" alt="">
-                <h2><span>Pide en el local más cercano mi rey</span></h2>
-                <p>Disfruta la mejor experiencia pidiendo Mi BK activando tu geolocalizacion cada vez que haces un
-                    pedido.Asi te aseguras de estar pidiendo en el local mas cercano a ti.</p>
-                <button>Activar ahora</button>
+    </nav>
+    <!-- contenedor -->
+    <div class="container">
+        <div class="row">
+            <!-- fila 1 -->
+            <div class="fila">
+                <div class="caja">
+                    <img src="static/images/localizacion.png" alt="" class="imagen">
+                    <h2><span>Pide en el local más cercano mi rey</span></h2>
+                    <p>Disfruta la mejor experiencia pidiendo Mi BK activando tu geolocalizacion cada vez que
+                        haces
+                        un
+                        pedido.Asi te aseguras de estar pidiendo en el local mas cercano a ti.</p>
+                    <button class="btn-caja">Activar ahora</button>
+                </div>
+                <div class="caja">
+                    <img src="static/images/cheestacker.png" alt="" class="imagen">
+                    <h2><span>Nueva cheestracker,lo mejor de dos mundos</span></h2>
+                    <p>Finalmente los sueños se hicieron realidad. ¡¡Una hamburguesa con Cheese Pillows
+                        adentro!!, y
+                        no
+                        cualquier burger, la deliciosa STACKER. Para los amantes del queso, esto es el paraíso.
+                        Pruébala
+                        en
+                        nuestros locales y descúbrela en nuestra app.</p>
+                    <button class="btn-caja">Pedilo en la App!</button>
+                </div>
             </div>
-            <div class="caja">
-                <img src="static/images/cheestacker.png" alt="">
-                <h2><span>Nueva cheestracker,lo mejor de dos mundos</span></h2>
-                <p>Finalmente los sueños se hicieron realidad. ¡¡Una hamburguesa con Cheese Pillows adentro!!, y no
-                    cualquier burger, la deliciosa STACKER. Para los amantes del queso, esto es el paraíso. Pruébala en
-                    nuestros locales y descúbrela en nuestra app.</p>
-                <button>Pedilo en la App!</button>
-            </div>
-            <div class="caja">
-                <img src="static/images/descuento.png" alt="">
-                <h2><span>SUELTA TU MANITO DE GUAGUA</span></h2>
-                <p>Todos conocemos a alguien apretado, ese amigo que acompaña a salir, pero solo se pide un agua. O ese
-                    amigo que no aporta para el regalo compartido. Si no conoces a nadie así, probablemente seas tú.
-                    Descubre los nuevos combos King Ahorro en tu local más cercano o próximamente en la app. Relaja esas
-                    manitos de guagua.</p>
-                <button>Pedilo en la App!</button>
-            </div>
-            <div class="caja">
-                <img src="static/images/aplicacion.png" alt="">
-                <h2><span>Estás a una descarga del bajón de tus sueños</span></h2>
-                <p>Baja la APP MI BK y encuentra promos y descuentos exclusivos para ti. Además, con cada compra
-                    acumulas coronitas para canjear por distintos productos.</p>
-                <button>Descarga aquí</button>
-            </div>
-            <div class="caja">
-                <img src="static/images/nugget.png" alt="">
-                <h2><span>Solo para Cheese Lovers</span></h2>
-                <p>Si eres un amante del queso, prepárate para una experiencia irresistiblemente deliciosa con nuestros
-                    nuevos Cheesy Pillows. Estas crujientes almohaditas apanadas están rellenas de queso gouda
-                    derretido, ¡una explosión de sabor que te dejará queriendo más y más! En Burger King, sabemos que el
-                    queso es la clave de la felicidad, ¡así que ven y disfruta de esta tentación queso-amorosa hoy mismo
-                </p>
-                <button>Ver más</button>
-            </div>
-        </div>
-        <div class="descargar-app">
-            <img src="static/images/celular.png" alt="">
-            <h2>Descarga nuestra APP y descubre las increibles ofertas que tenemos para ti.Cupones y ofertas! </h2>
+
+            <!-- fila 2 -->
+            <div class="fila">
+                <div class="caja">
+                    <img src="static/images/descuento.png" alt="" class="imagen" class="imagen">
+                    <h2><span>SUELTA TU MANITO DE GUAGUA</span></h2>
+                    <p>Todos conocemos a alguien apretado, ese amigo que acompaña a salir, pero solo se pide un
+                        agua. O
+                        ese
+                        amigo que no aporta para el regalo compartido. Si no conoces a nadie así, probablemente
+                        seas
+                        tú.
+                        Descubre los nuevos combos King Ahorro en tu local más cercano o próximamente en la app.
+                        Relaja
+                        esas
+                        manitos de guagua.</p>
+                    <button class="btn-caja">Pedilo en la App!</button>
+
+                </div>
 
 
-            <p>Apple y el logotipo de Apple son marcas comerciales de Apple Inc., registradas en EE. UU. y otros países.
-                App Store es una marca de servicio de Apple Inc. Google Play es una marca comercial de Google Inc. Se
+
+                <div class="caja">
+                    <img src="static/images/aplicacion.png" alt="" class="imagen">
+                    <h2><span>Estás a una descarga del bajón de tus sueños</span></h2>
+                    <p>Baja la APP MI BK y encuentra promos y descuentos exclusivos para ti. Además, con cada compra
+                        acumulas coronitas para canjear por distintos productos.</p>
+                    <button class="btn-caja">Descarga aquí</button>
+                </div>
+            </div>
+        </div>
+            <!-- fila 3 -->
+            <div class="fila">
+                <div class="caja">
+                    <img src="static/images/nugget.png" alt="" class="imagen">
+                    <h2><span>Solo para Cheese Lovers</span></h2>
+                    <p>Si eres un amante del queso, prepárate para una experiencia irresistiblemente deliciosa con
+                        nuestros
+                        nuevos Cheesy Pillows. Estas crujientes almohaditas apanadas están rellenas de queso gouda
+                        derretido, ¡una explosión de sabor que te dejará queriendo más y más! En Burger King, sabemos
+                        que el
+                        queso es la clave de la felicidad, ¡así que ven y disfruta de esta tentación queso-amorosa hoy
+                        mismo
+                    </p>
+                    <button class="btn-caja">Ver más</button>
+                </div>
+             
+            </div>
+   
+
+        <div class="row-3">
+            <img src="static/images/celular.png" alt="" class="celular">
+            <h3>Descarga nuestra APP y descubre las increibles ofertas que tenemos para ti.Cupones y ofertas! </h3>
+
+
+            <p>Apple y el logotipo de Apple son marcas comerciales de Apple Inc., registradas en EE. UU. y otros
+                países.
+                App Store es una marca de servicio de Apple Inc. Google Play es una marca comercial de Google Inc.
+                Se
                 aplican términos.</p>
+
         </div>
+
+        <footer>
+            <div class="enlaces">
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Infomración Legal</a>
+                <a href="#">Politica de Privacidad</a>
+                <a href="#">Contáctanos</a>
+                <a href="#">Promociones-Bases y condiciones</a>
+            </div>
+            <div class="redes">
+                <h2>Redes sociales</h2>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-linkedin"></i>
+                <p>TM & Burger King Corporation.Todos los derechos reservados.</p>
+                <a href="#"> <i class="bi bi-globe"></i>ES</a>
+                <button>Configuración de coockies</button>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <div class="enlaces">
-            <a href="#">Preguntas Frecuentes</a>
-            <a href="#">Términos y condiciones</a>
-            <a href="#">Infomración Legal</a>
-            <a href="#">Politica de Privacidad</a>
-            <a href="#">Contáctanos</a>
-            <a href="#">Promociones-Bases y condiciones</a>
-        </div>
-        <div class="redes">
-            <h2>Redes sociales</h2>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-linkedin"></i>
-            <p>TM & Burger King Corporation.Todos los derechos reservados.</p>
-            <a href="#"> <i class="bi bi-globe"></i>ES</a>
-            <button>Configuración de coockies</button>
-        </div>
-    </footer>
     <script src="static/js/script.js"></script>
 </body>
 
