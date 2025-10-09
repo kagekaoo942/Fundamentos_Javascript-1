@@ -25,7 +25,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #E0D7C9;
+    border-bottom: 1px solid #E0D7C9;
 }
 
 .icono-menu {
@@ -90,7 +90,7 @@ nav {
     padding-top: 5px;
     display: flex;
     justify-content: flex-end;
-
+border-bottom: 1px solid #E0D7C9;
 }
 
 .idioma {
