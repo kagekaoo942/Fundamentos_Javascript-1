@@ -164,7 +164,6 @@ nav {
     padding-bottom: 10px;
     background-color: #fff;
     border-radius: 20px;
-
 }
 
 span {
@@ -186,10 +185,10 @@ h2 {
 }
 
 .description {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 20px;
     margin-left: 20px;
-    width: 320px;
+    width: 340px;
 }
 
 .btn-caja {
