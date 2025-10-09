@@ -186,7 +186,6 @@ h2 {
 
 .description {
     font-size: 14px;
-    margin-bottom: 20px;
     margin-left: 20px;
     width: 400px;
 }
@@ -208,11 +207,11 @@ h2 {
 }
 
 #btn-1 {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #btn-4 {
-    margin-top: 100px;
+    margin-top:45px;
 }
 
 .container-2 {
