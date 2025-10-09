@@ -27,10 +27,12 @@ nav {
     align-items: center;
     border-bottom: 2px solid #E0D7C9;
 }
+
 .icono-menu {
-  font-size: 20px;
-color: #502314;
+    font-size: 20px;
+    color: #502314;
 }
+
 .enlaces {
     display: flex;
     align-items: center;
@@ -159,7 +161,7 @@ color: #502314;
 .caja {
     width: 540px;
     margin-bottom: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     background-color: #fff;
     border-radius: 20px;
 
@@ -184,9 +186,10 @@ h2 {
 }
 
 .description {
-    margin-bottom: 30px;
+    font-size: 15px;
+    margin-bottom: 20px;
     margin-left: 20px;
-    width: 450px;
+    width: 320px;
 }
 
 .btn-caja {
@@ -206,11 +209,11 @@ h2 {
 }
 
 #btn-1 {
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
 #btn-4 {
-    margin-top: 65px;
+    margin-top: 145px;
 }
 
 .container-2 {
@@ -247,7 +250,8 @@ h2 {
 .play-store {
     width: 150px;
 }
-.app-store{
+
+.app-store {
     width: 140px;
 }
 
