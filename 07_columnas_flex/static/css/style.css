@@ -16,12 +16,14 @@ body {
     margin: 0 auto;
     background-color: #b9b1b1d0;
     border-radius: 2px;
+
 }
 
 /* Contenedor de filas */
 .row {
     display: flex;
-    gap: 10px;
+ flex-wrap: wrap;
+     gap: 10px;
     margin-top: 10px;
 }
 
