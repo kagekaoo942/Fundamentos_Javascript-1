@@ -177,7 +177,7 @@ function pedirNota() {
     let nota = parseFloat(prompt("Ingresar nota:"))
     if (nota <= 3.9 && nota >= 1.0) {
         alert("Reprobado")
-    } else if (nota <= 4.0 && nota <= 7.0) {
+    } else if (nota >= 4.0 && nota <= 7.0) {
         alert("Aprobado")
     } else {
         alert("Nota invalida")
