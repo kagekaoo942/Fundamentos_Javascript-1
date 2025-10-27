@@ -74,16 +74,29 @@ function sumarNumero() {
 /*4️⃣ Bucle while: Imprimir múltiplos de 2 del 1 al n (n es el límite de números a encontrar)
 Escribe un programa que use un bucle while para imprimir los múltiplos de 2 que hay entre 1 y 10 (inclusive).*/
 
-function imprimirMultiplo(){
-let numero = parseInt(prompt("Ingresar numero: "));
-let count = 1;
+function imprimirMultiplo() {
+    let numero = parseInt(prompt("Ingresar numero: "));
+    let count = 1;
     let result = "el resultado es: "
-    while(count < numero){
+    while (count < numero) {
         count++
-        if(count % 2 == 0){
+        if (count % 2 == 0) {
             /*concatena*/
             result += ` ${count}`
         }
     }
-alert(` ${result}`)
+    alert(` ${result}`)
+}
+
+/*5️⃣ Bucle for: Tabla de multiplicar
+Pide un número al usuario e imprime su tabla de multiplicar del 1 al 10 en un solo alert.*/
+
+function tablaMultiplicar() {
+    let num = parseInt(prompt("Ingresar numero: "))
+    let tablas = `Tabla de ${num}: `;
+    // inicio de bucle for
+    for (let i = 1; i <= 10; i++) {
+tablas += `\n ${num} x ${i} = ${num * i}`
+    }
+    alert(tablas);
 }
