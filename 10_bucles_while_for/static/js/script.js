@@ -78,9 +78,10 @@ function imprimirMultiplo(){
 let numero = parseInt(prompt("Ingresar numero: "));
 let count = 1;
     let result = "el resultado es: "
-    while(count <= numero){
+    while(count < numero){
         count++
-        if(count%2 == 0){
+        if(count % 2 == 0){
+            /*concatena*/
             result += ` ${count}`
         }
     }
