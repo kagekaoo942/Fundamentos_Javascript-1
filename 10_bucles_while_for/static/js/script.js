@@ -96,7 +96,72 @@ function tablaMultiplicar() {
     let tablas = `Tabla de ${num}: `;
     // inicio de bucle for
     for (let i = 1; i <= 10; i++) {
-tablas += `\n ${num} x ${i} = ${num * i}`
+        tablas += `\n ${num} x ${i} = ${num * i}`
     }
     alert(tablas);
+}
+
+/*6️⃣ Bucle for: Números pares hasta n
+Solicita un número n e imprime todos los números pares desde 1 hasta n usando un bucle for.
+
+Ejemplo de resultado:
+2, 4, 6, 8, 10*/
+
+function par() {
+    let num = parseInt(prompt("ingresar numero: "));
+    let resultado = `los numeros pares de ${num} son:`
+
+    for (let i = 1; i <= num; i++) {
+        if (i % 2 == 0) {
+            resultado += ` ${i}`
+
+        }
+    }
+    alert(resultado)
+}
+
+/*7️⃣ Bucle for: Contar letras de una palabra
+Pide una palabra al usuario y muestra cuántas letras tiene usando un bucle for para recorrerla.*/
+
+function contadorLetra() {
+    let word = prompt("ingresar numero: ");
+    let cont = 0
+    for (let i = 0; i < word.length; i++) {
+        cont++
+    }
+    alert(`La palabra "${word} tiene ${cont} letras."`)
+}
+
+
+/*
+8️⃣ Bucle for: Calcular factorial
+Solicita un número n e imprime el factorial de ese número (n × n-1 × n-2 × … × 1) usando un bucle for.*/
+
+function numeroFactorial() {
+    let numero = parseInt(prompt("ingresar numero: "));
+    let factorial = 1;
+    let largo = "1";
+    for (let i = 2; i <= numero; i++) {
+        factorial *= i;
+    }
+    alert(`El factorial de ${numero} es : ${largo} = ${factorial}`)
+}
+
+/*9️⃣ Bucle for: Suma de números impares hasta n
+Pide un número n y suma todos los números impares desde 1 hasta n.
+Muestra el resultado con alert.*/
+
+function impar() {
+    let numero = parseInt(prompt("ingresar numero: "));
+    let respuesta = 0;
+    let largoImpar = "1";
+    for (let i = 2; i <= numero; i++) {
+        if (i % 2 != 0) {
+            respuesta += i;
+            largoImpar += ` + ${i}`
+        }
+
+    }
+    respuesta += 1;
+    alert(`Las suma de ${largoImpar} = ${respuesta} `)
 }
