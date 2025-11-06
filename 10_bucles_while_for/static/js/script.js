@@ -87,7 +87,7 @@ function imprimirMultiplo() {
     }
     alert(` ${result}`)
 }
-
+// bucles fo
 /*5️⃣ Bucle for: Tabla de multiplicar
 Pide un número al usuario e imprime su tabla de multiplicar del 1 al 10 en un solo alert.*/
 
@@ -99,6 +99,7 @@ function tablaMultiplicar() {
         tablas += `\n ${num} x ${i} = ${num * i}`
     }
     alert(tablas);
+    console.log(tablas)
 }
 
 /*6️⃣ Bucle for: Números pares hasta n
