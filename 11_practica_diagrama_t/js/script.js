@@ -85,7 +85,7 @@ function numerosPares() {
 
 // ejercicio 7
 /*Mostrar en alerta los 100 primeros números impares. (Bucle)*/
-function numerosImpares(){
+function numerosImpares() {
     let numero = parseInt(prompt("ingresar numero: "))
     let pares = "";
     for (let i = 1; i <= 100; i++) {
@@ -100,29 +100,63 @@ function numerosImpares(){
 
 // ejercicio 8
 /*Sumar 5 números leídos por teclado - Mostrar resultado (Bucle)*/
-function numeroLeido(){
-let suma = 0;
+function numeroLeido() {
+    let suma = 0;
 
-for (let i = 1; i <= 5; i++) {
-    let num = parseFloat(prompt("Ingresa el número " + i + ":"));
-    suma += num;
-}
-alert("La suma de los 5 números es: " + `${suma}`);
+    for (let i = 1; i <= 5; i++) {
+        let num = parseFloat(prompt("Ingresa el número " + i + ":"));
+        suma += num;
+    }
+    alert("La suma de los 5 números es: " + `${suma}`);
 }
 
 // ejercicio 9
 /*Modificar el anterior para que permita sumar N números leídos por teclado. El valor de N se debe leer previamente por teclado.*/
-function numeroLeidoN(){
-let cantidad = parseInt(prompt("¿Cuántos números quiere sumar?"));
-let suma = 0;
+function numeroLeidoN() {
+    let cantidad = parseInt(prompt("¿Cuántos números quiere sumar?"));
+    let suma = 0;
 
-for (let i = 1; i <= cantidad; i++) {
-    let numero = parseFloat(prompt("Ingresa el número " + i + ":"));
-    suma += numero;
-}
+    for (let i = 1; i <= cantidad; i++) {
+        let numero = parseFloat(prompt("Ingresa el número " + i + ":"));
+        suma += numero;
+    }
 
-alert("La suma de los " + `${cantidad}` + " números es: " + ` ${suma}`);
+    alert("La suma de los " + `${cantidad}` + " números es: " + ` ${suma}`);
 }
 
 // ejercicio 10
 /*Leer 2 números y solicitar al usuario que ingrese la opción de sumarlos, restarlos, multiplicarlos o dividirlos según elija quien ingresa.*/
+function operacionMultiple() {
+    let num1 = parseFloat(prompt("Ingresa el primer número:"));
+    let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+
+    let opcion = prompt("Elige una operación:\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n\nIngresa el número de la opción:");
+
+    let resultado;
+    let operacion;
+
+    if (opcion === "1") {
+        resultado = num1 + num2;
+        operacion = "suma";
+    } else if (opcion === "2") {
+        resultado = num1 - num2;
+        operacion = "resta";
+    } else if (opcion === "3") {
+        resultado = num1 * num2;
+        operacion = "multiplicación";
+    } else if (opcion === "4") {
+        if (num2 === 0) {
+            alert("Error: No se puede dividir por cero");
+        } else {
+            resultado = num1 / num2;
+            operacion = "división";
+        }
+    } else {
+        alert("Opción no válida");
+    }
+
+    if (resultado !== undefined) {
+        alert("El resultado de la " + `${operacion}` + " es: " + `${resultado}`);
+    }
+
+}
