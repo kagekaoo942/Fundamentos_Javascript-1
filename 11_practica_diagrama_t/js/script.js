@@ -79,12 +79,50 @@ function numerosPares() {
         }
     }
 
-    alert("Los 100 primeros números de " + `${numero}` + " son: " + `${pares}`);
+    alert("Los 100 primeros números pares de " + `${numero}` + " son: " + `${pares}`);
 
 }
 
 // ejercicio 7
 /*Mostrar en alerta los 100 primeros números impares. (Bucle)*/
 function numerosImpares(){
-    
+    let numero = parseInt(prompt("ingresar numero: "))
+    let pares = "";
+    for (let i = 1; i <= 100; i++) {
+        pares += (i * 2 - 1);
+        if (i < 100) {
+            pares += ",  ";
+        }
+    }
+
+    alert("Los 100 primeros números impares de " + `${numero}` + " son: " + `${pares}`);
 }
+
+// ejercicio 8
+/*Sumar 5 números leídos por teclado - Mostrar resultado (Bucle)*/
+function numeroLeido(){
+let suma = 0;
+
+for (let i = 1; i <= 5; i++) {
+    let num = parseFloat(prompt("Ingresa el número " + i + ":"));
+    suma += num;
+}
+alert("La suma de los 5 números es: " + `${suma}`);
+}
+
+// ejercicio 9
+/*Modificar el anterior para que permita sumar N números leídos por teclado. El valor de N se debe leer previamente por teclado.*/
+function numeroLeidoN(){
+let cantidad = parseInt(prompt("¿Cuántos números quiere sumar?"));
+let suma = 0;
+
+for (let i = 1; i <= cantidad; i++) {
+    let numero = parseFloat(prompt("Ingresa el número " + i + ":"));
+    suma += numero;
+}
+
+alert("La suma de los " + `${cantidad}` + " números es: " + ` ${suma}`);
+}
+
+// ejercicio 10
+/*Leer 2 números y solicitar al usuario que ingrese la opción de sumarlos, restarlos, multiplicarlos o dividirlos según elija quien ingresa.*/
