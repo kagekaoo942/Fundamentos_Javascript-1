@@ -158,5 +158,4 @@ function operacionMultiple() {
     if (resultado !== undefined) {
         alert("El resultado de la " + `${operacion}` + " es: " + `${resultado}`);
     }
-
 }
